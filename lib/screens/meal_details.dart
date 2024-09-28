@@ -3,7 +3,7 @@ import 'package:meal_app/model/data.dart';
 import 'package:meal_app/model/meal.dart';
 
 class MealDetails extends StatelessWidget {
-  MealDetails({
+  const MealDetails({
     super.key,
   });
 
@@ -28,12 +28,56 @@ class MealDetails extends StatelessWidget {
             size: 20,
           ),
         ),
-        title: Center(
-            child:
-                Text("${meal.title}", style: TextStyle(color: Colors.white))),
+        title:
+            Center(child: Text("data", style: TextStyle(color: Colors.white))),
       ),
-      body: Center(
-        child: Text("${meal.imageUrl}"),
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Image.asset(
+              meal.imageUrl,
+              width: double.infinity,
+              height: 250,
+              fit: BoxFit.cover,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(15),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    meal.title,
+                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    meal.description,
+                    style: TextStyle(fontSize: 15),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "price:100\$${meal.salary}",
+                        style: TextStyle(fontSize: 15),
+                      ),
+                      Text(
+                        "Time:${meal.time}min",
+                        style: TextStyle(fontSize: 15),
+                      )
+                    ],
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
