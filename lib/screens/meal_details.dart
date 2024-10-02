@@ -28,8 +28,8 @@ class MealDetails extends StatelessWidget {
             size: 20,
           ),
         ),
-        title:
-            Center(child: Text("data", style: TextStyle(color: Colors.white))),
+        title: Center(
+            child: Text(meal.title, style: TextStyle(color: Colors.white))),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -64,7 +64,7 @@ class MealDetails extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "price:100\$${meal.salary}",
+                        "Price: \$${meal.salary}",
                         style: TextStyle(fontSize: 15),
                       ),
                       Text(

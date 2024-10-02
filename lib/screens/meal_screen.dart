@@ -11,7 +11,7 @@ class MealScreen extends StatelessWidget {
     Map<String, dynamic> data =
         ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
     String id = data["id"];
-    List<Meal> mealfilter = meals.where((value) {
+    List<Meal> mealfilter = meals.where((value){
       return value.categoryNumber.contains(id);
     }).toList();
     return Scaffold(
@@ -41,7 +41,7 @@ class MealScreen extends StatelessWidget {
               return MealItem(
                   image: mealfilter[index].imageUrl,
                   name: mealfilter[index].title,
-                  id: mealfilter[index].categoryNumber);
+                  id: mealfilter[index].id);
             }));
   }
 }

@@ -28,7 +28,8 @@ const List<Meal> meals = [
       imageUrl: "assets/images/butterchicken.jpg",
       salary: "90",
       time: "25",
-      description: "----------------",
+      description:
+          "A creamy and rich chicken curry made with butter, cream, and Indian spices.",
       categoryNumber: "c2"),
   Meal(
       id: "m3",
@@ -36,7 +37,8 @@ const List<Meal> meals = [
       imageUrl: "assets/images/alfredo.jpg",
       salary: "60",
       time: "25",
-      description: "----------------",
+      description:
+          "Classic Alfredo pasta made with a creamy cheese sauce and fettuccine noodles.",
       categoryNumber: "c4"),
   Meal(
       id: "m4",
@@ -44,7 +46,8 @@ const List<Meal> meals = [
       imageUrl: "assets/images/steak.jpg",
       salary: "150",
       time: "30",
-      description: "----------------",
+      description:
+          "Grilled steak seasoned with herbs and spices, served with a side of vegetables.",
       categoryNumber: "c3"),
   Meal(
       id: "m5",
@@ -52,7 +55,7 @@ const List<Meal> meals = [
       imageUrl: "assets/images/smoked_cheesy.jpg",
       salary: "90",
       time: "25",
-      description: "----------------",
+      description: "Cheese smoked to perfection with a unique blend of spices.",
       categoryNumber: "c7"),
   Meal(
       id: "m6",
@@ -60,7 +63,8 @@ const List<Meal> meals = [
       imageUrl: "assets/images/lamp_biryani.jpg",
       salary: "90",
       time: "30",
-      description: "----------------",
+      description:
+          "Aromatic rice dish made with tender lamp meat, spices, and basmati rice.",
       categoryNumber: "c2"),
   Meal(
       id: "m7",
@@ -68,7 +72,8 @@ const List<Meal> meals = [
       imageUrl: "assets/images/shish_Tawook.jpg",
       salary: "99",
       time: "30",
-      description: "----------------",
+      description:
+          "Grilled marinated chicken served over a bed of flavorful rice.",
       categoryNumber: "c7"),
   Meal(
       id: "m8",
@@ -76,6 +81,7 @@ const List<Meal> meals = [
       imageUrl: "assets/images/lamp_shank.jpg",
       salary: "130",
       time: "35",
-      description: "----------------",
+      description:
+          "Slow-cooked lamp shank served with a rich gravy and vegetables.",
       categoryNumber: "c3")
 ];
